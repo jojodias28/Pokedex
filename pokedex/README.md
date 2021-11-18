@@ -1,0 +1,1 @@
+# Link do Trello : https://trello.com/b/hrqL5xCg/pokedex
