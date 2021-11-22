@@ -1,9 +1,11 @@
+import React from 'react'
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function useRequestData(url) {
   const [data, setData] = useState(undefined)
   const [isLoading, setIsLoading] = useState(false)
+
 
 
   useEffect(() => {
@@ -17,8 +19,8 @@ export default function useRequestData(url) {
       .catch(error => {
         setIsLoading(false)
         console.log(error.message)
-    })
+      })
   }, [url])
-  
+
   return [data, setData, isLoading]
 }
