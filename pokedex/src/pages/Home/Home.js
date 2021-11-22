@@ -16,16 +16,6 @@ const Home = () => {
         setNumeroPagina(value)
     }
 
-    // const getPokeNomes = () => {
-
-    //     const offset = (numeroPagina - 1) * 20;
-    //     axios
-    //       .get(${BASE_URL}/pokemon/?limit=20&offset=${offset})
-    //       .then((response) => {
-    //         setPokeNomes(response.data.results)
-    //         setLoading(false)
-    //       })
-
 
     const history = useHistory();
 
