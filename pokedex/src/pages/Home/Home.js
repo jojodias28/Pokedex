@@ -5,15 +5,17 @@ import Pagination from '@mui/material/Pagination'
 import { useHistory } from "react-router-dom";
 import { useState } from 'react';
 
+
+
 const Home = () => {
 
-    // const offset = (numeropagina - 1) * 20
+    const [numberPage, setNumberPage] = useState(1)
+    const page = numberPage * 20
+    const [listPokemonData] = useRequestData(`${BASE_URL}/pokemon?limit=20&offset=${page}`)
 
-    const [listPokemonData] = useRequestData(`${BASE_URL}/pokemon/`)
-    const [numeroPagina, setNumeroPagina] = useState(1)
 
-    const onChangePagina = (event, value) => {
-        setNumeroPagina(value)
+    const onChangePage = (event, value) => {
+        setNumberPage(value)
     }
 
 
@@ -31,14 +33,16 @@ const Home = () => {
                 return (
                     <div>
                         <p key={poke.id}> {poke.name} </p>
-                        {/* {poke.sprites.front_default} */}
+
+                        {/* <img src={poke.sprites.front_default} />  */}
+
                     </div>
                 )
             })}
 
             <button onClick={goToPokedex}> Ir para Pokedex </button>
             <div>
-                <Pagination count={10} color='primary' onChange={onChangePagina} />
+                <Pagination count={20} color='primary' onChange={onChangePage} />
             </div>
 
         </div>
