@@ -4,10 +4,11 @@ import GlobalStateContext from '../../Global/GlobalStateContext ';
 
 
 const Pokedex = () => {
-    const {pokemonsDetail} = useContext(GlobalStateContext)
+
+    const { pokedex } = useContext(GlobalStateContext)
+    console.log("POKEDEX", pokedex)
 
 
-    
 
     const history = useHistory();
 
@@ -18,11 +19,15 @@ const Pokedex = () => {
     return (
         <div>
             <h1> Pokedex </h1>
-            {pokemonsDetail?.map((poke) => {
+            {pokedex?.map((poke) => {
                 return <div>
-                  <p key={poke.id}> {poke.name} </p>
-              </div>
-            }) }
+                    <p key={poke.id}> {poke.name} </p>
+                    <img
+                        src={poke.sprites.other.dream_world.front_default}
+                        alt={poke.name}
+                    />
+                </div>
+            })}
             <button onClick={goToHome}> Go back</button>
 
         </div>

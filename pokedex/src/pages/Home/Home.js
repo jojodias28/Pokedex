@@ -34,7 +34,7 @@ const Home = () => {
               src={poke.sprites.other.dream_world.front_default}
               alt={pokemonsDetail.name}
             />
-            <button onClick={addToPokedex}> Adicionar à Pokedex </button>
+            <button onClick={() => addToPokedex(poke)}> Adicionar à Pokedex </button>
           </div>
         );
       })}
