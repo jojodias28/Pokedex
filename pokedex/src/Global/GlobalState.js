@@ -42,58 +42,21 @@ const GlobalState = (props) => {
   }, [pokemonsUrls]);
 
 
-
-
-  // const addToPokedex = (pokemonId) => {
-  //   const pok = pokemonsDetail.filter((p) => {
-  //     return p.id === pokemonId;
-  //   });
-  //   const novoPoke = pok[0];
-
-  //   const novoPokeIndex = pokedex.findIndex((p) => {
-  //    return p.id === pokemonId;
-  //   }) 
-  //   if (novoPokeIndex === -1){
-  //     const novoPokeAdicionado = [
-  //       ...pokedex,
-  //       novoPoke,
-  //     ];
-  //     setPokedex( novoPokeAdicionado );
-  //   } else { 
-  //       const copiaPokedex = [...pokedex]
-  //       copiaPokedex[novoPokeIndex].quantidade++
-  //       setPokedex( copiaPokedex );
-  //   }
-  //     alert("Pokemon adicionado com sucesso!")
-
-  // };
-
-
-
-
-
   const addToPokedex = (poke) => {
-
-    console.log('Olha', poke)
-
 
     const pokeIndex = pokemonsDetail.findIndex(
       (item) => item.name === poke.name
     );
-    console.log("ATENÇÃO", pokeIndex)
-
-    console.log('Atenção', pokemonsDetail[pokeIndex])
 
     const newPokemonsList = [...pokemonsDetail];
     newPokemonsList.splice(pokeIndex, 1);
     const newPokedexList = [...pokedex, pokemonsDetail[pokeIndex]];
+
     setPokemonsDetail(newPokemonsList)
+
     setPokedex(newPokedexList)
+
     alert("Pokemon adicionado com sucesso!")
-
-    console.log("ATENÇÃO", newPokemonsList)
-
-    console.log("ATENÇÃO", pokedex)
 
   }
 
@@ -106,15 +69,9 @@ const GlobalState = (props) => {
   };
 
   const teste = {
-    listPokemonData,
-    setListPokemonData,
-    pokemonsUrls,
-    setPokemonsUrls,
     pokemonsDetail,
-    setPokemonsDetail,
     onChangePage,
     pokedex,
-    setPokedex,
     addToPokedex,
   };
 
