@@ -5,7 +5,7 @@ Nome dos integrantes:
 - Caio Chamarelli
 - Hellen Marina
 
-Link do Surge: zany-quiet.surge.sh
+Link do Surge: https://zany-quiet.surge.sh/
 
 Link do Trello: https://trello.com/b/hrqL5xCg/pokedex
 
