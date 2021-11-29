@@ -41,9 +41,7 @@ const GlobalState = (props) => {
       });
   }, [pokemonsUrls]);
 
-
   const addToPokedex = (poke) => {
-
     const pokeIndex = pokemonsDetail.findIndex(
       (item) => item.name === poke.name
     );
@@ -52,17 +50,25 @@ const GlobalState = (props) => {
     newPokemonsList.splice(pokeIndex, 1);
     const newPokedexList = [...pokedex, pokemonsDetail[pokeIndex]];
 
-    setPokemonsDetail(newPokemonsList)
+    setPokemonsDetail(newPokemonsList);
 
-    setPokedex(newPokedexList)
+    setPokedex(newPokedexList);
 
-    alert("Pokemon adicionado com sucesso!")
+    alert("Pokemon adicionado com sucesso!");
+  };
 
-  }
+  const removePokemonCart = (poke) => {
+    const pokeIndex = pokedex.findIndex((item) => item.name === poke.name);
 
+    const newPokedexList = [...pokedex];
+    newPokedexList.splice(pokeIndex, 1);
+    const newPokemonList = [...pokemonsDetail, pokedex[pokeIndex]];
 
+    setPokemonsDetail(newPokemonList);
+    setPokedex(newPokedexList);
 
-
+    alert("Pokemon removido!");
+  };
 
   const onChangePage = (event, value) => {
     setNumberPage(value);
@@ -73,6 +79,7 @@ const GlobalState = (props) => {
     onChangePage,
     pokedex,
     addToPokedex,
+    removePokemonCart,
   };
 
   return (
