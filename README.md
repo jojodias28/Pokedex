@@ -5,14 +5,14 @@ Nome dos integrantes:
 - Caio Chamarelli
 - Hellen Marina
 
-Link do Surge: www.link.com.br
+Link do Surge: zany-quiet.surge.sh
 
 Link do Trello: https://trello.com/b/hrqL5xCg/pokedex
 
 O que funciona:
-- Item 1
-- Item 2
+- Imagens renderizadas
+- botões de transição entre as páginas
 
 O que não funciona: 
-- Item 3
-- Item 4
+- Projeto não está completo
+- Página de detalhes não está pronta
