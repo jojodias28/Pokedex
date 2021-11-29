@@ -9,7 +9,11 @@ const Home = () => {
 
   const goToPokedex = () => {
     history.push("/pokedex");
-  };
+  }; 
+
+  const goToDetails = (name) => {
+    history.push(`/details/${name}`)
+  }
 
   return (
     <div>
@@ -22,6 +26,7 @@ const Home = () => {
               alt={pokemonsDetail.name}
             />
             <button onClick={() => addToPokedex(poke)}> Adicionar à Pokedex </button>
+            <button onClick={() => goToDetails(poke.name)} key={poke.name}>Ver Detalhes</button>
           </div>
         );
       })}
