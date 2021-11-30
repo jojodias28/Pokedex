@@ -7,10 +7,12 @@ const Details = () => {
 
     const params = useParams()
     const pokemon = useRequestData(
-        `${BASE_URL}/pokemon/${params.name}`,
-        {}
+        `${BASE_URL}/pokemon/${params.name}`
     ); 
 
+    console.log('Atenção', params)
+    console.log('KOEH', pokemon)
+    
 
     const pokeType =
     pokemon.types &&
