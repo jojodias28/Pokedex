@@ -5,7 +5,7 @@ Nome dos integrantes:
 - Caio Chamarelli
 - Hellen Marina
 
-Link do Surge: fascinated-weather.surge.sh
+Link do Surge: https://fascinated-weather.surge.sh/h
 
 Link do Trello: https://trello.com/b/hrqL5xCg/pokedex
 
