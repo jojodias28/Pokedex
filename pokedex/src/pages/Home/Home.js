@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Pagination from "@mui/material/Pagination";
 import { useHistory } from "react-router-dom";
+import { PokeBody, PokeHeader, PokeLogo } from "./HomeStyled";
 import { goToDetails, goToPokedex } from "../../Routes/Coordinate";
 import GlobalStateContext from "../../Global/GlobalStateContext ";
 
@@ -11,7 +12,12 @@ const Home = () => {
   const history = useHistory();
 
   return (
-    <div>
+    <PokeBody>
+      <PokeHeader>
+        <PokeLogo src={"/img/logo.png"} />
+        <button onClick={() => goToPokedex(history)}> Ir para Pokedex </button>
+      </PokeHeader>
+
       {pokemonsDetail?.map((poke) => {
         return (
           <div>
@@ -34,11 +40,10 @@ const Home = () => {
         );
       })}
 
-      <button onClick={() => goToPokedex(history)}> Ir para Pokedex </button>
       <div>
         <Pagination count={20} color="primary" onChange={onChangePage} />
       </div>
-    </div>
+    </PokeBody>
   );
 };
 
