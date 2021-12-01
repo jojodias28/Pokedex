@@ -1,8 +1,8 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
-import GlobalStateContext from "./GlobalStateContext ";
 import { BASE_URL } from "../contants/Url";
 import useRequestData from "../Hooks/UseRequestData";
-import axios from "axios";
+import GlobalStateContext from "./GlobalStateContext ";
 
 const GlobalState = (props) => {
   const [numberPage, setNumberPage] = useState(1);

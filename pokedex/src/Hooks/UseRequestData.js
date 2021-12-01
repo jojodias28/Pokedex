@@ -1,26 +1,24 @@
-import React from 'react';
+import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function useRequestData(url) {
-  const [data, setData] = useState(undefined)
-  const [isLoading, setIsLoading] = useState(false)
-
-
+  const [data, setData] = useState(undefined);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true)
+    setIsLoading(true);
 
-    axios.get(url)
-      .then(response => {
-        setIsLoading(false)
-        setData(response.data)
+    axios
+      .get(url)
+      .then((response) => {
+        setIsLoading(false);
+        setData(response.data);
       })
-      .catch(error => {
-        setIsLoading(false)
-        console.log(error.message)
-      })
-  }, [url])
+      .catch((error) => {
+        setIsLoading(false);
+      });
+  }, [url]);
 
-  return [data, setData, isLoading]
+  return [data, setData, isLoading];
 }
