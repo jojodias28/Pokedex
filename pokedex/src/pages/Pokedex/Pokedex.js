@@ -1,20 +1,18 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
+import { goToHome } from "../../Routes/Coordinate";
 import GlobalStateContext from "../../Global/GlobalStateContext ";
+import { goToDetails } from "../../Routes/Coordinate";
 
 const Pokedex = () => {
   const { pokedex, removePokemonCart } = useContext(GlobalStateContext);
-  console.log("POKEDEX", pokedex);
 
   const history = useHistory();
-
-  const goToHome = () => {
-    history.push("/");
-  };
 
   return (
     <div>
       <h1> Pokedex </h1>
+
       {pokedex?.map((poke) => {
         return (
           <div>
@@ -30,11 +28,17 @@ const Pokedex = () => {
             >
               Remover
             </button>
+            <button
+              onClick={() => goToDetails(history, poke.name)}
+              key={poke.name}
+            >
+              Ver Detalhes
+            </button>
           </div>
         );
       })}
 
-      <button onClick={goToHome}> Go back</button>
+      <button onClick={() => goToHome(history)}> Go back</button>
     </div>
   );
 };
