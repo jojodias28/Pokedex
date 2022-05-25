@@ -5,33 +5,6 @@ export const PokeBody = styled.body`
   min-height: 100vh;
 `;
 
-export const PokeHeader = styled.header`
-  height: 15vh;
-  background-color: #f7f7f7;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
-`;
-
-export const PokeLogo = styled.img`
-  height: 100%;
-`;
-
-export const PokeButton = styled.button`
-  background: #cf0e0e;
-  border: 1px solid #f7f7f7;
-  color: #f7f7f7;
-  border-radius: 5px;
-  width: 10%;
-  height: 70%;
-
-  :hover {
-    border: 1px solid #cf0e0e;
-    color: #f7f7f7;
-  }
-`;
-
 export const PokeButtonCard = styled.button`
   background: #cf0e0e;
   border: 1px solid #f7f7f7;
@@ -52,12 +25,39 @@ export const PokeButtonDetails = styled.button`
   background: none;
   border: 1px solid black;
   border-radius: 100px;
-  width: 40%;
+  width: 15%;
   height: 40%;
 
   :hover {
     border: 1px solid #eb4334;
     color: #eb4334;
+  }
+`;
+
+export const PokeLogo = styled.img`
+  height: 100%;
+`;
+
+export const PokeHeader = styled.header`
+  height: 15vh;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+`;
+
+export const PokeButton = styled.button`
+  background: #cf0e0e;
+  border: 1px solid #f7f7f7;
+  color: #f7f7f7;
+  border-radius: 5px;
+  width: 10%;
+  height: 70%;
+
+  :hover {
+    border: 1px solid #cf0e0e;
+    color: #f7f7f7;
   }
 `;
 
