@@ -3,7 +3,7 @@ export const goToHome = (history) => {
 };
 
 export const goToDetails = (history, name) => {
-  history.push(`/details/${name}`);
+  history.push(`/${name}`);
 };
 
 export const goToPokedex = (history) => {

@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { BASE_URL } from "../contants/Url";
 import useRequestData from "../Hooks/UseRequestData";
+import Details from "../pages/Details/Details";
+import Home from "../pages/Home/Home";
 import GlobalStateContext from "./GlobalStateContext ";
 
 const GlobalState = (props) => {
@@ -10,6 +12,7 @@ const GlobalState = (props) => {
   const [pokemonsUrls, setPokemonsUrls] = useState([]);
   const [pokemonsDetail, setPokemonsDetail] = useState([]);
   const [pokedex, setPokedex] = useState([]);
+  const [show, setShow] = useState([]);
   const [listPokemonData, setListPokemonData] = useRequestData(
     `${BASE_URL}/pokemon?limit=20&offset=${page}`
   );
@@ -74,12 +77,24 @@ const GlobalState = (props) => {
     setNumberPage(value);
   };
 
+  const handleClose = () => {
+    setShow(false);
+    window.location.pathname = "/";
+  };
+
+  const handleShow = () => {
+    setShow(true);
+  };
+
   const teste = {
     pokemonsDetail,
     onChangePage,
     pokedex,
     addToPokedex,
     removePokemonCart,
+    show,
+    handleClose,
+    handleShow,
   };
 
   return (
