@@ -53,7 +53,7 @@ const Pokedex = () => {
                   onClick={() => goToDetails(history, poke.name)}
                   key={poke.name}
                 >
-                  +
+                  Details
                 </PokeButtonDetails>
               </PokeButtonsCard>
             </PokeCard>
