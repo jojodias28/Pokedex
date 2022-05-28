@@ -5,12 +5,6 @@ Nome dos integrantes:
 - Caio Chamarelli
 - Hellen Marina
 
-Link do Surge: https://fascinated-weather.surge.sh/h
+Link do Surge: [https://handy-kitten.surge.sh/]
 
-Link do Trello: https://trello.com/b/hrqL5xCg/pokedex
 
-O que funciona:
-- Todas as páginas propostas funcionando
-
-O que não funciona: 
-- Falta estilizar
