@@ -28,7 +28,7 @@ Para  realização deste projeto foram utilizados:
 
 ### Página Pokedex
 
--Componente que imprime todos os cards adicionados na pokedex, com os nomes dos pokemons.
+-Componente que imprime todos os cards adicionados na pokedex.
 ㅤ
 ### Página Detalhes
 
