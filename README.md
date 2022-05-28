@@ -1,9 +1,9 @@
 # POKEDEX
 
-Nome dos integrantes: 
-- Joana Dias
-- Caio Chamarelli
-- Hellen Marina
+## Responsáveis pelo projeto : 
+- <a href="https://github.com/jojodias28" target="_blank"><img src="https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> <a href="https://www.linkedin.com/in/joana-dias-b3a742168/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+- <a href="https://github.com/Caio-Chamarelli" target="_blank"><img src="https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> <a href="https://www.linkedin.com/in/caio-chamarelli-155a1510a/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+- <a href="https://github.com/Hellenmarina" target="_blank"><img src="https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> <a href="https://www.linkedin.com/in/hellen-marina/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
 ## Objetivo do Projeto
 
