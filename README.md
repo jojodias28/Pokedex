@@ -5,6 +5,6 @@ Nome dos integrantes:
 - Caio Chamarelli
 - Hellen Marina
 
-Link do Surge: [https://handy-kitten.surge.sh/]
+[acesse o site aqui](https://handy-kitten.surge.sh/)
 
 
