@@ -15,7 +15,7 @@ Para  realização deste projeto foram utilizados:
 * hooks 
 * Global states
 * Router
-* Styled-components e 
+* Styled-components  
 * material MUI
 * bootstrap
 
