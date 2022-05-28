@@ -12,6 +12,12 @@ export const PokeHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    height: 20vh;
+  }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    height: 20vh;
+  }
 `;
 
 export const PokeLogo = styled.img`
@@ -30,6 +36,14 @@ export const PokeButton = styled.button`
     border: 1px solid #cf0e0e;
     color: #f7f7f7;
   }
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+   width: 50% ;
+  }
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px)  {
+   width:40% ;
+  }
 `;
 
 export const PokeButtonCard = styled.button`
@@ -46,6 +60,16 @@ export const PokeButtonCard = styled.button`
   :hover {
     opacity: 1;
   }
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+   height: 85% ;
+   font-size: 10px;
+  }
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+   height: 90% ;
+   font-size: 10px;
+
 `;
 
 export const PokeButtonDetails = styled.button`
@@ -59,6 +83,18 @@ export const PokeButtonDetails = styled.button`
     border: 1px solid #eb4334;
     color: #eb4334;
   }
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+   height: 50% ;
+   font-size: 10px;
+  }
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    height: 50% ;
+   font-size: 10px;
+  }
+
+  
 `;
 
 export const PokeButtonsCard = styled.div`
@@ -67,6 +103,17 @@ export const PokeButtonsCard = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    width: 40vw;
+   
+  }
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    width: 20vw;
+   
+  }
+
 `;
 
 export const PokeCard = styled.div`
@@ -80,6 +127,16 @@ export const PokeCard = styled.div`
   border-radius: 12px;
   overflow: hidden;
   margin-top: 0;
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+   width: 40vw ;
+   height: 40vh;
+  }
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+   width: 20vw ;
+   height: 40vh;
+  }
 `;
 
 export const PokemonName = styled.h4`
@@ -97,6 +154,13 @@ export const PokemonImg = styled.img`
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    width: 30vw;
+  }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+   width: 20vw ;
+  }
 `;
 
 export const PokeMain = styled.div`
@@ -107,6 +171,10 @@ export const PokeMain = styled.div`
   justify-items: center;
   align-items: center;
   grid-row-gap: 20px;
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const PaginationDiv = styled.div`
@@ -117,6 +185,7 @@ export const PaginationDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 `;
 
 export const TitleCard = styled.div`
@@ -128,4 +197,11 @@ export const TitleCard = styled.div`
   align-items: center;
   overflow: hidden;
   margin-top: 0;
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+   width: 40vw ;
+  }
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+   width: 40vh ;
 `;
